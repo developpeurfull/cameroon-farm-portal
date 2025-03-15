@@ -30,16 +30,16 @@ const Navbar: React.FC = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled 
-          ? "backdrop-blur-md bg-white/80 shadow-sm py-3" 
+          ? "backdrop-blur-md bg-white/90 shadow-sm py-3" 
           : "bg-transparent py-6"
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="flex items-center space-x-2">
-          <div className="bg-cameroon-green rounded-lg w-9 h-9 flex items-center justify-center">
+        <a href="#" className="flex items-center space-x-3">
+          <div className="bg-cameroon-green rounded-xl w-10 h-10 flex items-center justify-center">
             <span className="text-white font-display text-lg font-bold">EC</span>
           </div>
-          <div className="text-cameroon-forest font-display font-semibold text-xl tracking-tight">
+          <div className="text-cameroon-forest font-display font-semibold text-2xl tracking-tight">
             ÉlevageCam
           </div>
         </a>
@@ -74,16 +74,16 @@ const Navbar: React.FC = () => {
       {/* Mobile menu */}
       <div 
         className={cn(
-          "md:hidden absolute top-full left-0 w-full bg-white shadow-lg transition-all duration-300 overflow-hidden glass-card",
+          "md:hidden absolute top-full left-0 w-full backdrop-blur-md bg-white/90 shadow-lg transition-all duration-300 overflow-hidden",
           isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         )}
       >
-        <div className="px-6 py-4 space-y-3">
+        <div className="px-6 py-6 space-y-4">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="block py-2 text-lg font-medium hover:text-cameroon-green transition-colors"
+              className="block py-3 text-lg font-medium hover:text-cameroon-green transition-colors border-b border-muted"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.name}

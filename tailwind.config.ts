@@ -110,6 +110,10 @@ export default {
 				'pulse-soft': {
 					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0.8' }
+				},
+				'bounce': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-15px)' }
 				}
 			},
 			animation: {
@@ -120,12 +124,14 @@ export default {
 				'fade-in-left': 'fade-in-left 0.6s ease-out',
 				'scale-up': 'scale-up 0.5s ease-out',
 				'float': 'float 6s ease-in-out infinite',
-				'pulse-soft': 'pulse-soft 3s ease-in-out infinite'
+				'pulse-soft': 'pulse-soft 3s ease-in-out infinite',
+				'bounce': 'bounce 2s ease-in-out infinite'
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 				display: ['Playfair Display', 'serif'],
-				body: ['Nunito Sans', 'sans-serif']
+				body: ['Nunito Sans', 'sans-serif'],
+				alt: ['Montserrat', 'sans-serif']
 			}
 		}
 	},
