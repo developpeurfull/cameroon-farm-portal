@@ -64,13 +64,14 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				cameroon: {
-					'green': '#007A5E',
+					'blue': '#0D47A1',
+					'navy': '#1A237E',
 					'red': '#CE1126',
-					'yellow': '#FCD116',
+					'yellow': '#FFD54F',
 					'earth': '#8B4513',
 					'soil': '#A67C52',
-					'forest': '#2E8B57',
-					'light': '#F5F5DC',
+					'light': '#F5F5F5',
+					'dark': '#212121'
 				}
 			},
 			borderRadius: {
